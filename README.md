@@ -8,7 +8,7 @@ from multiple sources, and in whatever format you want.
 ## Why?
 
 This project was heavily inspired by the tool [ArgoCD Vault Plugin](https://github.com/argoproj-labs/argocd-vault-plugin).
-Unlike many other secret management tools, it performs replacements the yaml before it is applied 
+Unlike many other secret management tools, it performs replacements on the yaml before it is applied 
 to the cluster. This has the benefit of requiring no custom resources or controllers, and it allows 
 you to compose and combine multiple secrets into a single resource. The downside is that it requires
 you to install the application into your CI/CD pipeline, and it makes testing locally less convenient.
@@ -89,3 +89,6 @@ Planned
 
 MIT License, see the LICENSE file.
 
+## Notes
+
+This project was partially bootstrapped with [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder).
